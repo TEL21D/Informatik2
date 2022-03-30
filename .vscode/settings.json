@@ -1,0 +1,10 @@
+{
+    "files.associations": {
+        "*.pm": "perl",
+        "*.pl": "perl",
+        "*.tmpl": "html",
+        "*.cpp": "cpp",
+        "queue": "cpp",
+        "__config": "cpp"
+    }
+}

@@ -1,0 +1,19 @@
+{
+    "tasks": [
+        {
+			"label": "Aktive Datei bauen und ausführen",
+			"type": "shell",
+			"command": "g++ --std=c++17 \"${file}\" -o \"${fileDirname}/${fileBasenameNoExtension}.out\" && \"${fileDirname}/${fileBasenameNoExtension}.out\"",
+			"args": [],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"presentation": {
+				"reveal": "silent"
+			},
+			"problemMatcher": []
+		}
+    ],
+    "version": "2.0.0"
+}
