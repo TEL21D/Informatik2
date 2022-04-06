@@ -58,8 +58,46 @@ struct linkedList
     void push_back(int data) {
         _head->push_back(data);
     }
+    int get() {
+        if (_head->empty())
+        {
+            return -1;
+        }
+        linkedListElement *temp = _head;
+        while(!temp->_next->empty()) {
+            // gehe bis ans ende der Liste
+            temp = temp->_next;
+        }
+        return temp->_data;
+    }
+    int pop_back() {
+        if (_head->empty())
+        {
+            return -1;
+        }
+
+        linkedListElement *temp = _head, *prev = nullptr;
+        while(!temp->_next->empty()) {
+            // gehe bis ans ende der Liste
+            prev = temp;
+            temp = temp->_next;
+        }
+        int temp_data = temp->_data;
+        if (prev == nullptr)
+        {
+            _head = temp->_next;
+        }
+        else {
+            prev->_next = temp->_next;
+        }
+        delete temp;
+
+        return temp_data;
+
+    }
     void print() {
         linkedListElement *temp = _head;
+
         while(!temp->empty()) {
             std::cout << temp->_data << " -> ";
             temp = temp->_next;
@@ -87,6 +125,11 @@ int main(int argc, char const *argv[])
     std::cout << "Hello Linked List \n";
     // std::cout << llist._head->_data << " -> " << llist._head->_next->_data  <<
     //     " -> " << llist._head->_next->_next->_data << " -> " << std::endl;
+    llist.print();
+    llist.push_back(5);
+    llist.print();
+    std::cout << "\nllist.popback(): " << llist.pop_back() << "\n";
+    std::cout << "\nllist.get(): " << llist.get() << "\n";
     llist.print();
     return 0;
 }
