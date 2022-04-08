@@ -28,8 +28,12 @@ struct baum
 
 int main(int argc, char const *argv[])
 {
-    Knoten _head;
-
+    Knoten _head,
+        _head2(5, &_head); // Konstruktor setzt den Wert auf 5 und die Addresse für das linke Element
     std::cout << "_head._value: " << _head._value << "\n";
+
+    std::cout << "_head2._value: " << _head2._value << "\n";
+    std::cout << "_head2._left->_value: " << _head2._left->_value << "\n";
+
     return 0;
 }
