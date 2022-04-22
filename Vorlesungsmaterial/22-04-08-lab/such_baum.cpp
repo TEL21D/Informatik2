@@ -4,10 +4,15 @@
 
 struct Knoten
 {
-    int _value;
-    Knoten *_left, *_right;
+    int _value; // Wert der im Knoten gespeichert wird
+    Knoten *_left, *_right; // Zeiger auf linken und rechten Knoten
 
-    // Konstruktur des Knotens, wird aufgerufen beim anlegen der Variable vom Typ Knoten
+    /*
+    * Konstruktur des Knotens, wird aufgerufen beim Anlegen der Variable vom Typ Knoten.
+    * Beim Initialisieren können Werte übergeben werden
+    * Knoten el(4, nullptr, nullptr)
+    * Wenn nichts angegeben wird, werden die vordefinierten Werte genutzt
+    */
     Knoten(int value = 0, Knoten * left=nullptr, Knoten * right = nullptr) {
         _value = value;
         _left = left;
@@ -15,9 +20,10 @@ struct Knoten
     }
     void push_back(int data) {
         if (empty()) {
+            // Überprüft ob der Knoten leer ist und fügt gegenfalls daten ein
             _value = data;
             _left = new Knoten();
-            _right = new Knoten(data);
+            _right = new Knoten();
             return;
         }
         if (data < _value) {
