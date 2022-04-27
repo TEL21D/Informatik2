@@ -40,6 +40,20 @@ struct Knoten
         _right->print_in_order();
 
     }
+    void print_pre_order() {
+        if (empty()) return;
+        std::cout << " " << _value << " ";
+        _left->print_pre_order();
+        _right->print_pre_order();
+
+    }
+    void print_post_order() {
+        if (empty()) return;
+        _left->print_post_order();
+        _right->print_post_order();
+        std::cout << " " << _value << " ";
+
+    }
     bool empty() {
         return _left == nullptr && _right == nullptr;
     }
@@ -55,7 +69,7 @@ struct baum
 
 int main(int argc, char const *argv[])
 {
-    Knoten head;
+    Knoten head;  // Konstruktor wird aufgerufen
     head.push_back(8);
     head.push_back(5);
     head.push_back(20);
@@ -63,6 +77,10 @@ int main(int argc, char const *argv[])
     head.push_back(2);
 
     head.print_in_order();
+    std::cout << "\n";
+    head.print_pre_order();
+    std::cout << "\n";
+    head.print_post_order();
     std::cout << "\n";
     return 0;
 }
