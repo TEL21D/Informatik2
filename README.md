@@ -25,6 +25,9 @@ Vorlesungsmaterial zur Informatik2
   - SelectionSort
   - QuickSort
 ## Übungsaufgaben
+- AVL Baum Implementierung: [Aufgabenstellung](https://github.com/TEL21D/Informatik2/tree/main/Uebungsaufgaben/Bäume/avl-baeume) --> [Lösung](https://github.com/TEL21D/Informatik2/tree/main/Uebungsaufgaben/Bäume/avl-baeume/loesung)
+
+### Stack Implementierung
 - Implementierung der Klasse Stack mit den untern aufgeslisteten Funktionen und Variablen
 - Implementierung ist ähnlich zu der verlinkten Liste aber der `push` und `pop` Mechanismus kann verbessert werden indem man nicht immer die ganze Liste durchläuft sondern den head verschiebt, wenn eine neues Element hinzukommt.
 ```cpp
