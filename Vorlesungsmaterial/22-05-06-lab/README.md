@@ -6,7 +6,7 @@ Implementierung einer Struktur für ein Soziales Netzwerk basierend auf dem [Cod
   - `void freundHinzufuegen(...)`
 - Im `struct socialNet` sollten mindestens folgende Methoden funktionieren (es können aber noch weitere hinzugefügt werden):
   - `vector<User*> nutzerNachStudiengang(string studienGang)`: Diese Methode soll einen Vector mit Usern zurückliefern die `string studienGang` enthalten. (Weitere Funktionen für den StudienOrt möglich)
-  - `void nutzerVerknuepfen(const User* user1, const User* user2)` um eine Freunschaftsbeziehung zwischen 2 Nutzern im Netzwerk herzustellen.
+  - `void nutzerVerknuepfen(User* user1, User* user2)` um eine Freunschaftsbeziehung zwischen 2 Nutzern im Netzwerk herzustellen.
   - `void nutzerErstellen(string name, unsigned short alter, string studienGang)`, um den User direkt durch Aufruf der Methode zu erstellen und hinzuzufügen
   - `unsigned int nutzerAnzahl()`: Methode welche die Anzahl der Nutzer zurück gibt.
   - `User* nutzerSuchen(string name)`: Methode soll Pointer auf den User mit Namen `string name` zurück geben.

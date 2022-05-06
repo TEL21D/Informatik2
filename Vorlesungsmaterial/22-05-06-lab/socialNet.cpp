@@ -73,3 +73,10 @@ struct socialNet
         return _nutzerListe.size();
     }
 };
+
+
+int main(int argc, char const *argv[])
+{
+    User* user1 = new User("Frank", 25, "ET", "Mannheim", "25.05.1997");
+    return 0;
+}
