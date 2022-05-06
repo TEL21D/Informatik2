@@ -29,10 +29,10 @@ struct User
         return _freundesListe.size();
     }
 
-    void freundHinzufuegen(const User * newUser) {
+    void freundHinzufuegen(User * newUser) {
 
     }
-    void freundLoeschen(const User * newUser) {
+    void freundLoeschen(User * newUser) {
 
     }
 
@@ -56,10 +56,10 @@ struct socialNet
     void nutzerErstellen() {
 
     }
-    void nutzerLoeschen(const User*) {
+    void nutzerLoeschen(User*) {
 
     }
-    void nutzerVerknuepfen(const User* user1, const User* user2) {
+    void nutzerVerknuepfen(User* user1, User* user2) {
 
     }
     // Nutzer eines Studiengangs suchen und zurückgeben
