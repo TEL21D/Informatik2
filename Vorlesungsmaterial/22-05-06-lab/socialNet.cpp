@@ -16,8 +16,13 @@ struct User
     vector<User*> _freundesListe;
 
     // Konstruktor
-    User() {
-
+    User(string name, unsigned int alter, string studienGang,
+        string studienOrt, string geburtsTag = "") {
+        _name = name;
+        _alter = alter;
+        _studienGang = studienGang;
+        _studienOrt = studienOrt;
+        _geburtsTag = geburtsTag;
     }
 
     unsigned int anzahlFreunde() {
@@ -52,6 +57,9 @@ struct socialNet
 
     }
     void nutzerLoeschen(const User*) {
+
+    }
+    void nutzerVerknuepfen(const User* user1, const User* user2) {
 
     }
     // Nutzer eines Studiengangs suchen und zurückgeben
