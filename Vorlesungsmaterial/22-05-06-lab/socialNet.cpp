@@ -57,9 +57,9 @@ struct socialNet
 {
     vector<User*> _nutzerListe;
 
-    void nutzerErstellen(string name, unsigned int alter, string studienGang,
-        string studienOrt, string geburtsTag = "") {
-            User* user1 = new User("Frank", 25, "ET", "Mannheim", "25.05.1997");
+    void nutzerErstellen(string name, unsigned int alter, string studienGang = "",
+        string studienOrt = "", string geburtsTag = "") {
+            User* user1 = new User(name, alter, studienGang, studienOrt, geburtsTag);
             _nutzerListe.push_back(user1);
     }
     void nutzerErstellen(User* newUser) {
@@ -89,7 +89,8 @@ struct socialNet
     }
     void nutzerAnzeigen() {
         for(User* us: _nutzerListe) {
-            cout << "Name: " << us->_name << "\n";
+            cout << "Name: " << us->_name << ", " << us->_studienGang
+                << ", "  << us->_geburtsTag <<"\n";
         }
     }
 };
@@ -103,6 +104,9 @@ int main(int argc, char const *argv[])
 
     netzwerk.nutzerErstellen(user1);
     netzwerk.nutzerErstellen(user2);
+    netzwerk.nutzerErstellen("Max Mustermann", 21, "BWL", "Heidelberg");
+
+    netzwerk.nutzerAnzeigen();
 
     netzwerk.nutzerVerknuepfen(user1, user2);
     netzwerk.nutzerVerknuepfen(user1, user2);
