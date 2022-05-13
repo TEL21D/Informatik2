@@ -39,7 +39,10 @@ struct User
         if (pos != _freundesListe.end())    // wenn delUser gefunden wurde
             _freundesListe.erase(pos);
     }
-
+    void printNutzer() {
+        cout << "Name: " << _name << ", " << _studienGang
+                << ", "  << _geburtsTag <<"\n";
+    }
 };
 
 struct Kante
@@ -82,15 +85,23 @@ struct socialNet
 
     }
     vector<User*> nutzerSuchen(string name) {
-
+        // nach dem string name in _nutzerListe suchen
+        vector<User*> result;
+        for (User* usr: _nutzerListe)
+        {
+            if (usr->_name == name)
+            {
+                result.push_back(usr);
+            }
+        }
+        return result;
     }
     unsigned int nutzerAnzahl() {
         return _nutzerListe.size();
     }
     void nutzerAnzeigen() {
         for(User* us: _nutzerListe) {
-            cout << "Name: " << us->_name << ", " << us->_studienGang
-                << ", "  << us->_geburtsTag <<"\n";
+            us->printNutzer();
         }
     }
 };
@@ -105,9 +116,13 @@ int main(int argc, char const *argv[])
     netzwerk.nutzerErstellen(user1);
     netzwerk.nutzerErstellen(user2);
     netzwerk.nutzerErstellen("Max Mustermann", 21, "BWL", "Heidelberg");
+    netzwerk.nutzerErstellen("Max Mustermann", 22, "Physik", "München");
 
     netzwerk.nutzerAnzeigen();
-
+    vector<User*> result = netzwerk.nutzerSuchen("Max Mustermann");
+    cout << "\n Suche...\n";
+    result[0]->printNutzer();
+    result[1]->printNutzer();
     netzwerk.nutzerVerknuepfen(user1, user2);
     netzwerk.nutzerVerknuepfen(user1, user2);
     return 0;
