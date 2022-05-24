@@ -1,6 +1,6 @@
 CC := g++
 CFLAGS := -Wall -g -std=c++17
-TARGET := todaysClass.out
+TARGET := main.out
 SRC_DIR := ./
 OBJ_DIR := $(SRC_DIR)
 
