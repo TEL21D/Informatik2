@@ -100,7 +100,7 @@ Element * rotateLeft(Element * root) {
 
   Element * A = root;
   Element * C = A->_right;
-  Element * D = C->_right;
+  Element * D = C->_left;
 
   C->_left = A;
   A->_right = D;
