@@ -20,16 +20,13 @@ void test_insertions2() {
   t1.insert(8);
   t1.insert(12);
   t1.insert(7);
-  cout << t1.dotString() << endl;
   t1.insert(13);
-  cout << t1.dotString() << endl;
   t1.insert(6);
-  cout << t1.dotString() << endl;
-  // t1.insert(14);
-  // t1.insert(5);
-  // t1.insert(15);
-  // t1.insert(4);
-  // t1.insert(17);
+  t1.insert(14);
+  t1.insert(5);
+  t1.insert(15);
+  t1.insert(4);
+  t1.insert(17);
 
   cout << t1.inOrderValues() << endl;
   cout << t1.dotString() << endl;
