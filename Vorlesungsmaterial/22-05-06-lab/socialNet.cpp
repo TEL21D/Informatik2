@@ -41,7 +41,7 @@ struct User
     }
     void printNutzer() {
         cout << "Name: " << _name << ", " << _studienGang
-                << ", "  << _geburtsTag <<"\n";
+                << ", "  << _studienOrt << ", "  << _geburtsTag <<"\n";
     }
 };
 
@@ -61,7 +61,7 @@ struct socialNet
     vector<User*> _nutzerListe;
 
     void nutzerErstellen(string name, unsigned int alter, string studienGang = "",
-        string studienOrt = "", string geburtsTag = "") {
+        string studienOrt = "", string geburtsTag = "00.00.0000") {
             User* user1 = new User(name, alter, studienGang, studienOrt, geburtsTag);
             _nutzerListe.push_back(user1);
     }
@@ -82,7 +82,16 @@ struct socialNet
     }
     // Nutzer eines Studiengangs suchen und zurückgeben
     vector<User*> nutzerNachStudiengang(string studienGang) {
-
+        // nach dem string studienGang in _nutzerListe suchen
+        vector<User*> result;
+        for (User* usr: _nutzerListe)
+        {
+            if (usr->_studienGang == studienGang)
+            {
+                result.push_back(usr);
+            }
+        }
+        return result;
     }
     vector<User*> nutzerSuchen(string name) {
         // nach dem string name in _nutzerListe suchen
@@ -100,6 +109,7 @@ struct socialNet
         return _nutzerListe.size();
     }
     void nutzerAnzeigen() {
+        // gibt alle Nutzer im Netzwerk aus
         for(User* us: _nutzerListe) {
             us->printNutzer();
         }
@@ -118,11 +128,16 @@ int main(int argc, char const *argv[])
     netzwerk.nutzerErstellen("Max Mustermann", 21, "BWL", "Heidelberg");
     netzwerk.nutzerErstellen("Max Mustermann", 22, "Physik", "München");
 
+    cout << "\n Alle Nutzer des Netzwerks anzeigen:\n";
     netzwerk.nutzerAnzeigen();
+
+    cout << "\n Suche nach Max Mustermann...\n";
     vector<User*> result = netzwerk.nutzerSuchen("Max Mustermann");
-    cout << "\n Suche...\n";
-    result[0]->printNutzer();
-    result[1]->printNutzer();
+    for (int i = 0; i < result.size(); i++)
+    {
+        result[i]->printNutzer();
+    }
+
     netzwerk.nutzerVerknuepfen(user1, user2);
     netzwerk.nutzerVerknuepfen(user1, user2);
     return 0;
