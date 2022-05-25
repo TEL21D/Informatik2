@@ -29,6 +29,7 @@ Vorlesungsmaterial zur Informatik2
 ## Übungsaufgaben
 - Implementierung eine verketteten Liste
 - AVL Baum Implementierung: [Aufgabenstellung](https://github.com/TEL21D/Informatik2/tree/main/Uebungsaufgaben/Bäume/avl-baeume) --> [Lösung](https://github.com/TEL21D/Informatik2/tree/main/Uebungsaufgaben/Bäume/avl-baeume/loesung)
+- Soziales Netzwerk
 
 ### Stack Implementierung
 - Implementierung der Klasse Stack mit den untern aufgeslisteten Funktionen und Variablen
