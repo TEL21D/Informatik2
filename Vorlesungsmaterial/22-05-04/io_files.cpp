@@ -10,7 +10,7 @@ using namespace std;
 void write_file() {
   ofstream outFile;
   outFile.open("example.txt", ofstream::app); // öffnet/erstellt die Datei example.txt
-  ofstream outFile2 ("example2.txt");
+  ofstream outFile2 ("example2.txt");   // Alternativ Dateinamen an den Konstruktor übergeben
 
 
   outFile << "Schreibe eine Zeile in die Datei" << endl;
@@ -53,7 +53,8 @@ vector<string> split (string zeile, char delimiter = ';') {
   while(getline(ss, col, delimiter)) {
     columns.push_back(col);
   }
-
+  // {Datum, Erster, Hoch .... }
+  // {2022-05-04 94,54 94,81 93,96 ... }
   return columns;
 }
 
