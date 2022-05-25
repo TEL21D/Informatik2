@@ -14,7 +14,7 @@
 
 ## Durchführung
 - Zusammenarbeit in Gruppen mit 3-4 Personen
-- Es kann die [CSV-Datei](https://github.com/TEL20A/Informatik-2/blob/main/Vorlesungsmaterial/21-05-17/wkn_716460_historic.csv) aus der letzten Vorlesung mit den Aktienkursen oder eine beliebe andere CSV-Datei zum Testen der Funktion genutzt werden
+- Es kann die [CSV-Datei](https://github.com/TEL21D/Informatik2/blob/main/Vorlesungsmaterial/22-05-04/wkn_716460_historic.csv) aus der letzten Vorlesung mit den Aktienkursen oder eine beliebe andere CSV-Datei zum Testen der Funktion genutzt werden
 
 
 **Noch fragen?**
