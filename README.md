@@ -17,7 +17,9 @@ Vorlesungsmaterial zur Informatik2
     - Soziale Netzwerke
     - Straßen
     - etc
-    - Dastellungsform: Adjazienzmatrix
+    - Dastellungsform:
+      - Adjazienzmatrix
+      - Adjazienzliste
 - Suchalgorithmen:
   - BubbleSort
   - MergeSort
@@ -25,6 +27,7 @@ Vorlesungsmaterial zur Informatik2
   - SelectionSort
   - QuickSort
 ## Übungsaufgaben
+- Implementierung eine verketteten Liste
 - AVL Baum Implementierung: [Aufgabenstellung](https://github.com/TEL21D/Informatik2/tree/main/Uebungsaufgaben/Bäume/avl-baeume) --> [Lösung](https://github.com/TEL21D/Informatik2/tree/main/Uebungsaufgaben/Bäume/avl-baeume/loesung)
 
 ### Stack Implementierung
