@@ -9,11 +9,11 @@ Vorlesungsmaterial zur Informatik2
   - Queue (Warteschlange): FiFo (first in first out) --> Beispiel
 - Graphen:
   - Baumstrukturen:
-    - Binärbaum
-    - Binärer Suchbaum
-    - Balancierte Bäume: AVL Prinzip
+    - [Binärbaum](https://www.programiz.com/dsa/binary-tree)
+    - [Binärer Suchbaum](https://www.programiz.com/dsa/binary-search-tree)
+    - Balancierte Bäume: [AVL Prinzip](https://www.programiz.com/dsa/avl-tree)
     - (Heap)
-  - Netzwerke:
+  - Netzwerke: --> [Graphen](https://www.programiz.com/dsa/graph)
     - Soziale Netzwerke
     - Straßen
     - etc
