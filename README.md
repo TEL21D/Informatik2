@@ -27,9 +27,10 @@ Vorlesungsmaterial zur Informatik2
   - SelectionSort
   - QuickSort
 ## Übungsaufgaben
-- Implementierung eine verketteten Liste
+- Implementierung eine verketteten Liste --> Loesung
 - AVL Baum Implementierung: [Aufgabenstellung](https://github.com/TEL21D/Informatik2/tree/main/Uebungsaufgaben/Bäume/avl-baeume) --> [Lösung](https://github.com/TEL21D/Informatik2/tree/main/Uebungsaufgaben/Bäume/avl-baeume/loesung)
-- Soziales Netzwerk
+- Soziales Netzwerk --> Loesung
+- [Element finden](https://github.com/TEL21D/Informatik2/tree/main/Uebungsaufgaben/Bäume/element_finden) --> Loesung
 
 ### Stack Implementierung
 - Implementierung der Klasse Stack mit den untern aufgeslisteten Funktionen und Variablen
