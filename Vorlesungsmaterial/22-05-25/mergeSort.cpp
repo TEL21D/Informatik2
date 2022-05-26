@@ -5,8 +5,8 @@
 using namespace std;
 
 
-void merge(vector<int> vec, int p, int q, int r);
-void mergeSort(vector<int> vec, int l, int r);
+void merge(vector<int> &vec, int p, int q, int r);
+void mergeSort(vector<int> &vec, int l, int r);
 void print(vector<int> vec);
 
 
@@ -24,7 +24,7 @@ int main() {
 
 
 // subarrays L und M nach vec
-void merge(vector<int> vec, int p, int q, int r) {
+void merge(vector<int> &vec, int p, int q, int r) {
 
   // erstelle L ← A[p..q] und M ← A[q+1..r]
   int n1 = q - p + 1;
@@ -73,7 +73,7 @@ void merge(vector<int> vec, int p, int q, int r) {
 }
 
 // Array in 2 subarrays aufteilen, sortieren und wieder zusammenfügen
-void mergeSort(vector<int> vec, int l, int r) {
+void mergeSort(vector<int> &vec, int l, int r) {
   if (l < r) {
     // m ist der Mittelpunkt des Arrays zum Teilen
     int m = l + (r - l) / 2;
