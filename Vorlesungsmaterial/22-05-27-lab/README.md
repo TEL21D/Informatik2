@@ -2,7 +2,7 @@
 
 ## Aufgabe
 - Einlesen einer CSV-Datei (separiert z.B. per `;`, `,`, ` ` ) mit beliebigen String ([`void read_stock()`](https://github.com/TEL21D/Informatik2/blob/main/Vorlesungsmaterial/22-05-04/io_files.cpp#L61) als Hilfestellung)
-- Sortieren / filtern der Einträge von bestimmten Spalten
+- Sortieren / filtern der Einträge von bestimmten Spalten ([Code Beispiel](https://github.com/TEL21D/Informatik2/blob/main/Vorlesungsmaterial/22-05-04/lambda.cpp#L23) zur Nutzung von `std::sort()`)
   - Dazu ist es eventuell notwendig in Strings gedpeicherte Zahlen z.b. in `int` oder `double` umzuwandeln
   - **Wichtig: Der Filter- oder Sortiervorgang bezieht sich immer auf eine Spalte. Daher muss daran gedacht werden die anderen Spalten der Reihe an die Sortierung anzupassen damit das gesamte Dokument richtig sortiert wird.**
 - In ein sortiertes CSV zurückschreiben (ähnlich wie [`write_file()`](https://github.com/TEL21D/Informatik2/blob/main/Vorlesungsmaterial/22-05-04/io_files.cpp#L10))
