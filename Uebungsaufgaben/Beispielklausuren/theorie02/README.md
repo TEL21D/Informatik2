@@ -19,7 +19,7 @@ Zeichnen Sie den Graphen zu folgender Adjazenzmatrix:
 | --- | --- | --- |---| ---| ---|
 |a    |0|1|1|0|0|
 |b    |0|0|0|0|0|
-|c    |0|0|1|1|0|
+|c    |0|0|0|1|1|
 |d    |0|0|0|0|0|
 |e    |0|0|0|0|0|
 
