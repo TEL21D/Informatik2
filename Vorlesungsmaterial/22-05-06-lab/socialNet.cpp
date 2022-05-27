@@ -31,7 +31,7 @@ struct User
     }
 
     void freundHinzufuegen(User * newUser) {
-
+        _freundesListe.push_back(newUser);
     }
     void freundLoeschen(User * delUser) {
         // nach delUser suchen und aus _freundesListe entfernen
@@ -114,6 +114,26 @@ struct socialNet
             us->printNutzer();
         }
     }
+    void printNetwork()
+    {
+        string str = "https://dreampuf.github.io/GraphvizOnline/#graph%20G%7B%0A";
+        for (auto nutzer : _nutzerListe)
+        {
+            if (nutzer->anzahlFreunde() > 0)
+            {
+                for (auto _friend : nutzer->_freundesListe)
+                {
+                    str += "%20%20" + nutzer->_name + "--" + _friend->_name + "%0A";
+                }
+            }
+            else
+            {
+                str += "%20%20" + nutzer->_name + "%0A";
+            }
+        }
+        str += "%7D";
+        cout << str << endl;
+    }
 };
 
 
@@ -126,7 +146,7 @@ int main(int argc, char const *argv[])
     netzwerk.nutzerErstellen(user1);
     netzwerk.nutzerErstellen(user2);
     netzwerk.nutzerErstellen("Max Mustermann", 21, "BWL", "Heidelberg");
-    netzwerk.nutzerErstellen("Max Mustermann", 22, "Physik", "München");
+    netzwerk.nutzerErstellen("Max Mustermann", 22, "Physik", "Muenchen");
 
     cout << "\n Alle Nutzer des Netzwerks anzeigen:\n";
     netzwerk.nutzerAnzeigen();
@@ -140,5 +160,11 @@ int main(int argc, char const *argv[])
 
     netzwerk.nutzerVerknuepfen(user1, user2);
     netzwerk.nutzerVerknuepfen(user1, user2);
+
+    cout << "\n Das Netzwerk verfuegt ueber " << netzwerk.nutzerAnzahl() << " Nutzer\n";
+
+    cout << "\n Das Netzwerk ausgeben ";
+    netzwerk.printNetwork();
+    cout << "\n";
     return 0;
 }
