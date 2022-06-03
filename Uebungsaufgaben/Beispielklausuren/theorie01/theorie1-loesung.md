@@ -18,7 +18,7 @@ Zeichnen Sie den Baum vor und nach jeder Rotation.
        https://dreampuf.github.io/GraphvizOnline/#graph%20G%20%7B%0A%20%20%20%2012%20--%202%0A%20%20%20%2012%20--%2057%0A%20%20%20%2057%20--%2055%0A%20%20%20%2057%20--%20180%0A%7D)
   5. [Baum nach Einfügen von `13`](
         https://dreampuf.github.io/GraphvizOnline/#graph%20G%20%7B%0A%20%20%20%2012%20--%202%0A%20%20%20%2012%20--%2057%0A%20%20%20%2057%20--%2055%0A%20%20%20%2057%20--%20180%0A%20%20%20%2055%20--%2013%0A%20%20%20%2055%20--%20D1%5Bstyle%3Dinvis%5D%0A%20%20%20%20%0A%20%20%20%20D1%5Bstyle%3Dinvis%5D%0A%7D)
-  6. [Baum nach Links-Rechts-Rotation um `12`](
+  6. [Baum nach Rechts-Links-Rotation um `12`](
       https://dreampuf.github.io/GraphvizOnline/#graph%20G%20%7B%0A%20%20%20%2055%20--%2012%0A%20%20%20%2012%20--%202%0A%20%20%20%2012%20--%2013%0A%20%20%20%2055%20--%20D1%5Bstyle%3Dinvis%5D%0A%20%20%20%2055%20--%2057%0A%20%20%20%2057%20--%20D2%5Bstyle%3Dinvis%5D%0A%20%20%20%2057%20--%20180%0A%20%20%20%20%0A%20%20%20%20%0A%20%20%20%20D1%5Bstyle%3Dinvis%5D%0A%20%20%20%20D2%5Bstyle%3Dinvis%5D%0A%7D)
 
 
@@ -29,7 +29,7 @@ Geben Sie die Adjazenzmatrix zu folgendem Graphen an:
 - Graphviz-Ansicht:
   ```
     graph G {
-    a -- b 
+    a -- b
     a -- c
     a -- e
     b -- d
@@ -113,7 +113,7 @@ Im Folgenden ist für einen binären Suchbaum eine Pre-Order-Darstellung gegeben
 
 - Lösung:
 
-  Da es ein binärer Suchbaum ist, ist die In-Ordner-Darstellung bekannt:  
+  Da es ein binärer Suchbaum ist, ist die In-Ordner-Darstellung bekannt:
     ` -10 2 17 35 72 103 `
 
   Aus beiden Darstellungen zusammen lässt sich die Baumstruktur rekonstruieren:
@@ -124,5 +124,3 @@ Im Folgenden ist für einen binären Suchbaum eine Pre-Order-Darstellung gegeben
   - Die Pre-Order-Darstellung zeigt auch, dass die `72` über `35` und `103` kommen muss.
   - Die In-Order-Darstellung zeigt, dass `35`und `103` links und rechts von `70` stehen.
   - [resultierender Baum](https://dreampuf.github.io/GraphvizOnline/#graph%20G%20%7B%0A%20%20%20%2017%20--%202%0A%20%20%20%2017%20--%20D1%5Bstyle%3Dinvis%5D%0A%20%20%20%2017%20--%2072%0A%20%20%20%2072%20--%2035%0A%20%20%20%2072%20--%20103%0A%20%20%20%202%20--%20-10%0A%20%20%20%202%20--%20D2%5Bstyle%3Dinvis%5D%0A%20%20%20%20%0A%20%20%20%20D1%5Bstyle%3Dinvis%5D%0A%20%20%20%20D2%5Bstyle%3Dinvis%5D%0A%7D)
-
-
