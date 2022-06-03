@@ -28,13 +28,13 @@ Vorlesungsmaterial zur Informatik2
   - Binäre Suche:
     - Liste muss sortiert sein oder man braucht eine binäre Baumstruktur der Daten
     - Der Suchraum wird eine jedem Suchschritt um die Hälfte verkleinert
-    - Laufzeitkomplexität: O(log n)   
+    - Laufzeitkomplexität: O(log n)
 - Sortiergorithmen:
   - BubbleSort:
     - Laufe durch die Liste und vertausche bei Bedarf mit dem vorherigen Element
     - Wenn kein Tausch mehr notwendig ist, ist die Liste sortiert
-    - Laufzeitkomplexität: 
-      - Worst-case: O(n^2)   
+    - Laufzeitkomplexität:
+      - Worst-case: O(n^2)
       - Best-case (wenn schon sortiert): O(n)
     - Speicherbedarf: O(1) --> Konstanter Speicher
   - InsertionSort:
@@ -55,19 +55,19 @@ Vorlesungsmaterial zur Informatik2
     - Sortiere die Liste mit Zeigern (von links und recht laufend) bis sich die Zeiger treffen --> Platz für das Pivot Element (Pivot Index)
     - Vergleiche die Elemente mit de Pivot und vertausche bei Bedarf, wenn links größer als Pivot und rechts kleiner als Pivot
     - Teile die Liste am Pivot Index und rufe die Funktion rekursiv für die beiden Teile auf
-    - Laufzeitkomplexität: 
-      - Durchschnittlich O(n * log n)   
+    - Laufzeitkomplexität:
+      - Durchschnittlich O(n * log n)
       - Im schlimmste Fall bei einer bereits sortierten Liste und schlechten Pivot O(n^2) möglich
     - Speicherbedarf: O(n) extra Speicher
-    - Der Algorithmus bietet das Potential die Ausführung parallel auszuführen 
+    - Der Algorithmus bietet das Potential die Ausführung parallel auszuführen
   - MergeSort:
     - Teile die Liste in jedem Schritt in die Hälfte bis zum kleinesten Element (1)
-    - Füge die benarchbaten Element/Listen Sortiert wieder zusammen 
+    - Füge die benarchbaten Element/Listen Sortiert wieder zusammen
     - Implementierung meistens rekursiv
-    - Laufzeitkomplexität: O(n * log n) 
+    - Laufzeitkomplexität: O(n * log n)
     - Speicherbedarf: O(n) extra Speicher
 ## Übungsaufgaben
-- Implementierung eine verketteten Liste --> Loesung
+- Implementierung eine verketteten Liste --> [Loesung](https://github.com/TEL21D/Informatik2/blob/main/Vorlesungsmaterial/22-03-30/linkedList.cpp)
 - AVL Baum Implementierung: [Aufgabenstellung](https://github.com/TEL21D/Informatik2/tree/main/Uebungsaufgaben/Bäume/avl-baeume) --> [Lösung](https://github.com/TEL21D/Informatik2/tree/main/Uebungsaufgaben/Bäume/avl-baeume/loesung)
 - Soziales Netzwerk --> [Loesung](https://github.com/TEL21D/Informatik2/blob/main/Vorlesungsmaterial/22-05-06-lab/socialNet.cpp)
 - [Element finden](https://github.com/TEL21D/Informatik2/tree/main/Uebungsaufgaben/Bäume/element_finden) --> Loesung

@@ -64,7 +64,7 @@ struct linkedList
         return _size;
     }
     bool empty() {
-        // Giht zuruck ob die Liste leer ist
+        // Gibt zurueck ob die Liste leer ist
         return _size == 0;
     }
     void push_back(int data) {
