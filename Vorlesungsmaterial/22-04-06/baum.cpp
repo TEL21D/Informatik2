@@ -19,10 +19,13 @@ struct Knoten
 };
 
 
+/**
+ * struct wird hier noch nicht benoetigt
 struct baum
 {
     Knoten *_head;
 };
+*/
 
 
 

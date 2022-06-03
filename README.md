@@ -4,7 +4,7 @@ Vorlesungsmaterial zur Informatik2
 
 ## Themenübersicht
 - Listen Datentypen:
-  - Verkettete Liste --> Beispiel
+  - Verkettete Liste --> [Beispiel](https://github.com/TEL21D/Informatik2/blob/main/Vorlesungsmaterial/22-03-30/linkedList.cpp)
   - Stack (Stapelspeicher): LiFo (last in first out) --> Beispiel
   - Queue (Warteschlange): FiFo (first in first out) --> Beispiel
 - Graphen:
