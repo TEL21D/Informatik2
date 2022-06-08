@@ -71,6 +71,7 @@ Vorlesungsmaterial zur Informatik2
 - AVL Baum Implementierung: [Aufgabenstellung](https://github.com/TEL21D/Informatik2/tree/main/Uebungsaufgaben/Bäume/avl-baeume) --> [Lösung](https://github.com/TEL21D/Informatik2/tree/main/Uebungsaufgaben/Bäume/avl-baeume/loesung)
 - Soziales Netzwerk --> [Loesung](https://github.com/TEL21D/Informatik2/blob/main/Vorlesungsmaterial/22-05-06-lab/socialNet.cpp)
 - [Element finden](https://github.com/TEL21D/Informatik2/tree/main/Uebungsaufgaben/Bäume/element_finden) --> [Loesung](https://github.com/TEL21D/Informatik2/blob/main/Uebungsaufgaben/Bäume/element_finden/element_finden_loesung.cpp)
+- [Nachfolger finden](https://github.com/TEL21D/Informatik2/tree/main/Uebungsaufgaben/Bäume/nachfolger_finden) --> [Loesung](https://github.com/TEL21D/Informatik2/blob/main/Uebungsaufgaben/Bäume/nachfolger_finden/nachfolger_finden_loesung.cpp)
 
 ### Stack Implementierung
 - Implementierung der Klasse Stack mit den untern aufgeslisteten Funktionen und Variablen

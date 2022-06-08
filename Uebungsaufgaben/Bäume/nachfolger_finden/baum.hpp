@@ -31,7 +31,7 @@ struct Element {
         return _right->get(key);
     }
 
-    Element * successor( int key_ );
+    Element * successor( int key );
 };
 
 #endif
