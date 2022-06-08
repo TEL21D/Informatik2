@@ -80,13 +80,13 @@ Vorlesungsmaterial zur Informatik2
 struct Stack {
   // Member Variablen
   int _size = 0;
-  listElement * _head = nullptr;
+  listElement * _head = new element();
 
   // Methoden
   void push();
-  void pop();
-  void top();
-  void size();
+  int pop();
+  int top();
+  int size();
   void print();
 };
 ```
