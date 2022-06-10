@@ -7,7 +7,7 @@ struct Element {
     Element * _right = nullptr;
 
     bool empty() {
-        return _left == nullptr;
+        return _left == nullptr && _right == nullptr;
     }
 
     void set(int key) {
