@@ -12,7 +12,13 @@ using namespace std;
 ***/
 
 /*** LOESUNG: ***/
-int Knoten::anzahlElemente() {}
+int Knoten::anzahlElemente() {
+  if (empty())
+  {
+    return 0;
+  }
+  return links->anzahlElemente() + rechts->anzahlElemente() + 1;
+}
 
 /*** TESTCODE/MAIN: ***/
 int main()
