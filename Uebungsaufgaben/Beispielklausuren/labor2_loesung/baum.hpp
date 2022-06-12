@@ -25,6 +25,9 @@ struct Knoten
     // Aufgabe 02
     bool enthaelt(int x);
 
+    // Augabe 04
+    int anzahlBlaetter();
+
 };
 
 bool Knoten::empty()
@@ -66,6 +69,20 @@ template<typename T>
 void print_vector(std::vector<T> const & v) {
   for (auto el : v) { std::cout << el << " "; }
   std::cout << std::endl;
+}
+
+/**
+ * @brief Hilfsfunktione zum Testen der Loesung
+ */
+template<typename T>
+void check_result(T result, T erwartet){
+    if (result == erwartet)
+    {
+        std::cout << result << " == " << erwartet << " ... OK\n";
+    }
+    else {
+        std::cout << result << " != " << erwartet << " ... NOK\n";
+    }
 }
 
 #endif
