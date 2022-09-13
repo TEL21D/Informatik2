@@ -45,7 +45,7 @@ Markieren Sie dabei jeweils, welcher Teil schon als sortiert bekannt ist und wel
 
 Erklären Sie die Idee hinter dem folgenden Suchalgorithmus:
 ```cpp
-int fooSearh(vector<int> &vec, int zahl) {
+int fooSearch(vector<int> &vec, int zahl) {
   int l = 0, r = vec.size()-1;
   int i;
   while(l<=r){
